@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Learn English Vocabulary</h1>
+    <p>Play and learn new words every day!</p>
+  </header>
+
+  <main>
+    <div id="game-container">
+      <div id="question-container">
+        <h2 id="question">What is the meaning of this word?</h2>
+        <p id="word">Example Word</p>
+      </div>
+      <div id="options-container">
+        <button class="option-btn" onclick="checkAnswer(this)">Option 1</button>
+        <button class="option-btn" onclick="checkAnswer(this)">Option 2</button>
+        <button class="option-btn" onclick="checkAnswer(this)">Option 3</button>
+        <button class="option-btn" onclick="checkAnswer(this)">Option 4</button>
+      </div>
+      <p id="feedback"></p>
+    </div>
+    <button id="next-btn" onclick="nextQuestion()">Next Word</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
